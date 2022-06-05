@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Contact Form</title>
+    <style>
+        :root {
+            font-family: sans-serif;
+        }
+
+        :not(#head) {
+            font-size: 13px;
+        }
+
+        #box {
+            height: 570px;
+            width: 830px;
+            margin: auto;
+            margin-top: 20px;
+            box-shadow: 0 0 3px black;
+            border-radius: 5px;
+        }
+
+        #left {
+            height: 100%;
+            width: 400px;
+            float: left;
+            margin-left: 35px;
+        }
+
+        #right {
+            height: 100%;
+            width: 395px;
+            float: left;
+            background-image: url("bednar-long-france-home-exterior-veranda-1558382504.jpg");
+            background-size: cover;
+        }
+
+        #a,
+        #b,
+        #c {
+            float: left;
+            line-height: 1.5;
+            margin-top: 10px;
+        }
+
+        #b,
+        #c {
+            margin-left: 22px;
+        }
+        #a{
+            margin-bottom: 25px;
+        }
+        #form {
+            height: 300px;
+            width: 350px;
+            clear: left;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        label {
+            display: block;
+            font-size: 15px;
+            color: grey;
+            margin-top: 20px;
+        }
+
+        input, textarea {
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid grey;
+        }
+
+        #head {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        #description {
+            margin-top: -9px;
+        }
+
+        span {
+            color: grey;
+        }
+
+        #sndmsg{
+            width: 120px;
+            height: 40px;
+            background-color: rgb(221, 152, 23);
+            color: white;
+            border-radius: 6px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <p style="text-align: center;">Contact Form #05</p>
+    <div id="box">
+        <div id="left">
+            <p id="head">Contact Us</p>
+            <p id="description">We're open for any suggestion or just to have a chat</p>
+            <div id="a"><span>ADDRESS:</span><br>198 West 21th<br> street,Suite 721<br> New York NY 10016</div>
+            <div id="b"><span>EMAIL:</span><br>info@yoursite.com</div>
+            <div id="c"><span>PHONE:</span><br>+1235 2355 98</div>
+            <div id="form">
+                <form>
+                    <ul>
+                        <li><label for="name">Name</label><input type="text" id="name"></li>
+                        <li><label for="e-mail">Email</label><input type="email" id="e-mail"></li>
+                        <li><label for="sub">Subject</label><input type="text" id="sub"></li>
+                        <li><label for="msg">Create a message here</label><textarea id="msg" cols="41"
+                                rows="4"></textarea></li>
+                        <li><input type="button" value="Send Message" id="sndmsg"></li>
+                    </ul>
+                </form>
+            </div>
+            <p style="font-weight: bold;">Follow us here</p> 
+            <pre><p style="color: grey; font-family: sans-serif; font-size: 11px;">FACEBOOK   TWITTER   INSTAGRAM   DRIBBLE</p></pre>
+        </div>
+        <div id="right"></div>
+    </div>
+</body>
+
+</html>

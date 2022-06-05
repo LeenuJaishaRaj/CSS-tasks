@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Flag Hoisting</title>
+    <style>
+        #block1{
+            height: 41px;
+            width: 264px;
+            background-color: brown;
+            border-radius: 10px;
+            position: relative;
+            top: 570px;
+            left: 500px;
+        }
+        #block2{
+            height: 41px;
+            width: 191px;
+            background-color: brown;
+            border-radius: 10px;
+            position: absolute;
+            top: 545px;
+            left: 542px;
+        }
+        #poll{
+            height: 525px;
+            width: 15px;
+            background-color: grey;
+            border-radius: 5px;
+            position: absolute;
+            top: 31px;
+            left: 631px;
+            z-index: -1;
+        }
+        img{
+            position: absolute;
+            top: 407px;
+            left: 639px;
+            animation-name: flag;
+            animation-duration: 3s;
+            animation-fill-mode: forwards;
+        }
+        @keyframes flag{
+            from{
+                top: 407px;
+                left: 639px;
+                
+             }
+            to{
+                height: 150px;
+                width: 275px;
+                top: 30px;
+                left: 620px;
+            }
+
+        }
+        
+         
+    </style>
+</head>
+<body>
+    <div id="block1"></div>
+    <div id="block2"></div>
+    <div id="poll"></div>
+    <img src="Flag.gif" alt="Flag" height="50" width="75">
+</body>
+</html>

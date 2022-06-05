@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Form Using CSS</title>
+    <style>
+        :root {
+            background-color: #423d3d;
+        }
+
+        #box {
+            height: 355px;
+            width: 645px;
+            border: 3px solid rgb(49, 39, 39);
+            background-color: #423d3d;
+            margin: auto;
+            margin-top: 100px;
+            border-radius: 30px;
+            box-shadow: 10px 10px 3px black;
+        }
+
+        input {
+            width: 225px;
+            height: 30px;
+            border-radius: 30px;
+            border: 3px solid rgb(49, 39, 39);
+            background-color: #423d3d;
+            box-shadow: 5px 6px 3px black;
+        }
+
+        #left {
+            height: 300px;
+            width: 275px;
+            float: left;
+            margin-left: 50px;
+        }
+
+        #right {
+            height: 300px;
+            width: 275px;
+            float: left;
+            margin-left: 30px;
+        }
+
+        #fname,
+        #e-mail,
+        #msg {
+            display: block;
+        }
+
+        #sname,
+        #phone,
+        #sub {
+            display: block;
+        }
+
+        label {
+            font-size: 15px;
+            color: white;
+            font-family: sans-serif;
+            margin-left: 20px;
+        }
+
+        ul {
+            padding: 0;
+            list-style-type: none;
+        }
+
+        li {
+            margin-top: 10px;
+        }
+
+        #sub {
+            width: 125px;
+            height: 36px;
+            color: white;
+            margin-top: 28px;
+            font-family: monospace;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        h1 {
+            margin-left: 53px;
+            font-family: sans-serif;
+            color: rgb(49, 39, 39);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <h1>CONTACT US</h1>
+        <form>
+            <div id="left">
+                <ul>
+                    <li><label for="fname">First Name</label><input type="text" id="fname"></li>
+                    <li><label for="e-mail">Email</label><input type="email" id="e-mail"></li>
+                    <li><label for="msg">Message</label><input type="text" id="msg"></li>
+                </ul>
+            </div>
+            <div id="right">
+                <ul>
+                    <li><label for="sname">Surname</label><input type="text" id="sname"></li>
+                    <li><label for="phone">Phone</label><input type="tel" id="phone"></li>
+                    <li><input type="submit" value="SUBMIT" id="sub"></li>
+                </ul>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
